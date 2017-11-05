@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <title>Insight Solutions</title>
+	   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+	  <script type="text/javascript" src="main.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body ng-app='mainApp'>
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/">Insight Solutions</a>
+		</div>
+			<ul class="nav navbar-nav">
+			  
+			  <li><a href="#/aboutus">About Us</a></li>
+			  <li><a href="#/contest">Contests</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			<li><a href="#/signup">Sign Up</a></li>
+			  <li><a href="#/login">Login</a></li>
+			  
+			</ul>
+		</div>
+	</nav>
+  
+    <!--<div class="container">
+    <div class="row">
+    <div class="col-md-10">
+      <ul class="nav">
+                <li><a href="#/"> Home </a></li>
+				<li><a href="#/login"> Login </a></li>
+				<li><a href="#/signup"> Sign up </a></li>
+				<li><a href="#/aboutus"> About us </a></li>
+      </ul>
+    </div>-->
+    <div class="col-md-20">
+        <div ng-view>
+        	
+        </div>
+    </div>
+    </div>
+    </div>
+    
+ 
+  </body>
+</html>

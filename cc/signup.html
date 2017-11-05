@@ -1,0 +1,86 @@
+
+		
+		<style>
+			   .sign-up-div{
+			    position : center;	
+			    width:800px; 
+				margin:0 auto;
+				height : 100%
+				border : 1px solid blue;
+				text-align : center;
+				background-color: #f2f2f2;
+               padding: 20px;
+			   border-radius: 5px;
+			   font-size : 14px;
+			}
+			input[type=text], select {
+                     width: 50%;
+                     padding: 12px 20px;
+                     margin: 8px 0;
+                     display: inline-block;
+                     border: 1px solid #ccc;
+                     border-radius: 4px;
+                     box-sizing: border-box;
+}
+
+input[type=email], select {
+                     width: 50%;
+                     padding: 12px 20px;
+                     margin: 8px 0;
+                     display: inline-block;
+                     border: 1px solid #ccc;
+                     border-radius: 4px;
+                     box-sizing: border-box;
+}
+
+input[type=password], select {
+                     width: 50%;
+                     padding: 12px 20px;
+                     margin: 8px 0;
+                     display: inline-block;
+                     border: 1px solid #ccc;
+                     border-radius: 4px;
+                     box-sizing: border-box;
+}
+
+
+
+
+
+button[type=submit] {
+                    width: 25%;
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 14px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+			
+			
+			
+		</style>
+		<div class="sign-up-div" >
+		<h1>Sign Up.</h1>
+		<form ng-app="mainApp"w ng-controller="signupcontroller">
+			</br><b>FirstName:</b>
+			<input type="text" name="first" ng-model="First" required><br><br>
+			<span ng-show="myform.first.$dirty && !myform.first.$valid">firstname is required</span>
+		    </br><b>LastName:</b>
+			<input type="text" name="last" ng-model="Last" required><br><br>
+			<span ng-show="myform.last.$dirty && !myform.last.$valid">lastname is required</span>
+			</br><b>Email:</b> &nbsp &nbsp
+			<input type="email"  name="myAddress" ng-model="text"><br><br>
+			<span ng-show="myform.myAddress.$error.email">Not a valid email address</span>
+			</br><b>New Password:</b>
+			<input type="Password" name="nnum" ng-model="nnumber"><br><br>
+		</br><b>Renter Password:</b>
+			<input type="Password"  name="rnum" ng-model="rnumber"><br><br>
+		</br>
+			<button ng-click="insertdata()"> Sign Up </button>
+
+			
+			
+		</form>
+	</div>
